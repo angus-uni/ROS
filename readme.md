@@ -7,6 +7,8 @@
 4. [Rosnode](#Rosnode)
 5. [Rostopic](#Rostopic)
 6. [Rosmsg](#Rosmsg)
+7. [Rosservice](#Rosservice)
+8. [Rossrv](#Rossrv)
 
 
 ## Some Useful Linux Commands
@@ -115,7 +117,7 @@ rostopic list
 #### View info about a ROS topic
 
 ```shell
-rostopic info [topic_name]
+rostopic info /[topic_name]
 ```
 
 #### View topic data currently being published
@@ -127,7 +129,7 @@ rostopic echo /[topic_name]
 ## Rosmsg
 
 1. [Show details about a ROS message](#Show-details-about-a-ROS-message)
-
+2. [Get info about a ROS message](#Get-info-about-a-ROS-message)
 
 #### Show details about a ROS message
 
@@ -136,5 +138,45 @@ rosmsg show [message]
 
 ```
 
+#### Get info about a ROS message
+
+```shell
+rosmsg info [message]
+
+```
 
 
+## Rosservice
+
+1. [View all active ROS services](#View-all-active-ROS-services)
+2. [Get info about a ROS service](#Get-information-about-a-ROS-service)
+3. [Call a ROS service]("#Call-a-ROS-service")
+
+#### View all active ROS services
+
+```shell
+rosservice list
+```
+
+#### Get information about a ROS service
+
+```shell
+rosservice info /[service_name]
+```
+
+#### Call a ROS service
+
+```shell
+rosservice call /[service_name][SPACE][TAB][TAB]
+```
+
+## Rossrv
+
+1. [Dislpay a ROS service message](#Dislpay-a-ROS-service-message)
+
+
+#### Dislpay a ROS service message
+
+```shell
+rossrv show [Service]:
+```
