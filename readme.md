@@ -3,8 +3,10 @@
 
 1. [Linux Commands](#Some-Useful-Linux-Commands)
 2. [Sheff Commands](#Sheff-Commands)
-3. [Core Commands](#Core-commands)
-4. [Rostopic](#Rostopic)
+3. [ROS Core Commands](#Core-commands)
+4. [Rosnode](#Rosnode)
+5. [Rostopic](#Rostopic)
+6. [Rosmsg](#Rosmsg)
 
 
 ## Some Useful Linux Commands
@@ -85,10 +87,23 @@ roscd [package_name]
 roscore
 ```
 
+## Rosnode
+
+1. [View all active ROS nodes](#View-all-active-ROS-nodes)
+
+
+#### View all active ROS nodes
+
+```shell
+rosnode list
+```
+
+
 ## Rostopic
 
-1. [View all active ROS nodes](#View-all-active-ROS-topics)
+1. [View all active ROS topics](#View-all-active-ROS-topics)
 2. [View info about a ROS topic](#View-info-about-a-ROS-topic)
+3. [View topic data currently being published](#View-topic-data-currently-being-published)
 
 
 #### View all active ROS topics
@@ -102,4 +117,24 @@ rostopic list
 ```shell
 rostopic info [topic_name]
 ```
+
+#### View topic data currently being published
+
+```shell
+rostopic echo /[topic_name]
+```
+
+## Rosmsg
+
+1. [Show details about a ROS message](#Show-details-about-a-ROS-message)
+
+
+#### Show details about a ROS message
+
+```shell
+rosmsg show [message]
+
+```
+
+
 
